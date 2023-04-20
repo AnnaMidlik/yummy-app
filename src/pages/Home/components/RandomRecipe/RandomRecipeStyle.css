@@ -1,6 +1,6 @@
 .recipeBoxesContainer {
-  height: 85vh;
   padding: 0 7rem;
+  margin-bottom: 2rem;
 }
 
 .recipeHeader {
@@ -11,15 +11,9 @@
 }
 
 .recipesBoxes {
-  margin: 2rem 0;
+  margin-top: 2rem;
 }
 
-.recipeBoxesContainer .recipesDiet {
-  padding: 0;
-  height: 10vh;
-  background-color: #d7127c;
-  margin-bottom: 2rem;
-}
 
 .arrow {
   width: 50px;

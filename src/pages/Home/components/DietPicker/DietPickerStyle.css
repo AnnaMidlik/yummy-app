@@ -1,0 +1,27 @@
+.dietPickerContainer {
+  background-color: #d7127c;
+  padding: 1rem 0;
+  display: flex;
+  padding: 1rem 7rem;
+  margin-bottom: 2rem;
+}
+
+
+.dietPickerHeader {
+  font-size: 2rem;
+  color: #fff;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.dietPickerHeader h2 {
+  margin: 0;
+}
+
+.dievPickerCategories {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}

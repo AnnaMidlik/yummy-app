@@ -1,0 +1,1 @@
+export { DietPicker as default } from './DietPicker'
