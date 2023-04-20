@@ -1,0 +1,23 @@
+.recipeBoxesContainer {
+  height: 85vh;
+}
+
+.recipeHeader {
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #d7127c;
+  border-top: 3px solid #d7127c;
+}
+
+.recipesBoxes {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipeBoxesContainer .recipesDiet {
+  padding: 0;
+  height: 10vh;
+  background-color: #d7127c;
+  margin-bottom: 2rem;
+}

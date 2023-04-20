@@ -1,0 +1,1 @@
+export { RecipeBox as default } from './RecipeBox'

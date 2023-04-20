@@ -1,0 +1,1 @@
+export { RandomRecipe as default } from './RandomRecipe'
