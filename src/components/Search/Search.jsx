@@ -7,7 +7,8 @@ export function Search() {
   const navigate = useNavigate();
   const submitForm = (e) => {
     e.preventDefault();
-    navigate(`/yummy-app/?results=${search}`)
+    navigate(`/yummy-app/results/${search}`)
+    setSearch('')
   }
   return (
     <form className='searchComponent' onSubmit={submitForm}>
