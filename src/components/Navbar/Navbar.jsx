@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../asserts/img/logo.png'
+import Search from '../Search'
 import './NavbarStyle.css'
 
 export function Navbar() {
@@ -12,10 +13,7 @@ export function Navbar() {
         </Link>
 
       </div>
-      <div className='links'>
-        Searsh
-        <input type="text" />
-      </div>
+      <Search />
     </div>
   )
 }

@@ -1,0 +1,37 @@
+.searchComponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.searchComponent input {
+  appearance: none;
+  padding: 0;
+  border: none;
+  width: 80%;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 1px #d7127c solid;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d7127c;
+}
+
+.searchComponent button {
+  background: transparent;
+  border: 2px solid #d7127c;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 2px 10px;
+  font-weight: bold;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+.searchComponent button:hover {
+  background-color: #d7127c;
+  color: #fff;
+
+}
