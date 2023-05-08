@@ -25,3 +25,12 @@
   justify-content: space-around;
   color: #fff;
 }
+
+.dietItem {
+  width: 13%;
+  font-weight: bold;
+}
+
+.dietItem p {
+  font-size: 1.2rem;
+}
