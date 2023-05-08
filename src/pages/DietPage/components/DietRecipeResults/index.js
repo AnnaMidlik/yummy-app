@@ -1,0 +1,1 @@
+export { DietRecipeResults as default } from './DietRecipeResults'
