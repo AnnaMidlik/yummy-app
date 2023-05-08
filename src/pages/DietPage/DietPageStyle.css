@@ -19,6 +19,21 @@
   width: 20%
 }
 
+.dietFilters a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.dietFilters a.active {
+  color: #d7127c;
+  text-decoration: underline #d7127c;
+}
+
+.dietFilters a:hover {
+  color: #d7127c;
+}
+
 .dietRecipeResults {
   width: 80%;
   display: grid;
