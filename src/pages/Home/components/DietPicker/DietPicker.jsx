@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './DietPickerStyle.css'
 import itemData from '../../../../data/dietCategoriesItems';
+
 
 export function DietPicker() {
   const showDietItem = (items) => {

@@ -14,7 +14,7 @@ export function PopularMainDish() {
     if (checkLocalItems) {
       setPopularMainDishRecipe(JSON.parse(checkLocalItems))
     } else {
-      const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&type=main-course&number=2`
+      const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&type=main-course&number=20`
       const api = await fetch(url);
       const data = await api.json();
       console.log(data.results)
