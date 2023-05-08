@@ -1,0 +1,1 @@
+export { PopularMainDish as default } from './PopularMainDish'

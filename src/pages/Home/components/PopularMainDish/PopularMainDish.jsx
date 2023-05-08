@@ -2,28 +2,29 @@ import React, { useState, useEffect } from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import RecipeBox from '../../../../components/RecipeBox'
-import './RandomRecipeStyle.css'
 
-export function RandomRecipe() {
-  const [randomRecipe, setRandomRecipe] = useState([]);
+export function PopularMainDish() {
+  const [popularMainDishRecipe, setPopularMainDishRecipe] = useState([]);
   useEffect(() => {
-    getRadom()
+    console.log(popularMainDishRecipe)
+    getMainDish()
   }, [])
-  const getRadom = async () => {
-    const checkLocalItems = localStorage.getItem('randomRecipe')
+  const getMainDish = async () => {
+    const checkLocalItems = localStorage.getItem('popularMainDish')
     if (checkLocalItems) {
-      setRandomRecipe(JSON.parse(checkLocalItems))
+      setPopularMainDishRecipe(JSON.parse(checkLocalItems))
     } else {
-      const url = `https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=20`
+      const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&type=main-course&number=2`
       const api = await fetch(url);
       const data = await api.json();
-      localStorage.setItem('randomRecipe', JSON.stringify(data.recipes))
-      setRandomRecipe(data.recipes)
+      console.log(data.results)
+      localStorage.setItem('popularMainDish', JSON.stringify(data.results))
+      setPopularMainDishRecipe(data.results)
     }
   }
   return (
     <div className='recipeBoxesContainer'>
-      <div className="recipeHeader">Recipe Box</div>
+      <div className="recipeHeader">Popular Main Dish</div>
       <Splide className='recipesBoxes'
         aria-labelledby="basic-example-heading"
         options={{
@@ -41,7 +42,7 @@ export function RandomRecipe() {
           },
         }}
       >
-        {randomRecipe.map(slide => {
+        {popularMainDishRecipe.map(slide => {
           return <SplideSlide
             key={slide.id}>
             <RecipeBox recipe={slide} />
