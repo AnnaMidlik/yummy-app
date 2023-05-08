@@ -8,8 +8,10 @@ export function DietPicker() {
   const showDietItem = (items) => {
     return items.map(item => (
       <div className='dietItem' key={item.title}>
-        <img src={item.img} alt={item.title} />
-        <p>{item.title}</p>
+        <Link to={`/yummy-app/diet/${item.title.replace(' ', '-').toLocaleLowerCase()}`}>
+          <img src={item.img} alt={item.title} />
+          <p>{item.title}</p>
+        </Link>
       </div>
     ))
   }
