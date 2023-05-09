@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import RecipeBox from '../../../../components/RecipeBox'
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 export function DietRecipeResults() {
   const params = useParams()
@@ -25,8 +25,10 @@ export function DietRecipeResults() {
   return (
     <div className='dietRecipeResults'>
       {dietRecipe.map(el => <div key={el.id} className="dietitem">
-        <RecipeBox
-          recipe={el} />
+        <Link to={`/yummy-app/recipe/${el.id}`}>
+          <RecipeBox
+            recipe={el} />
+        </Link>
       </div>)}
     </div>
   )

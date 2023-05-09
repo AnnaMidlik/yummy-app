@@ -1,0 +1,47 @@
+.recipeContainer {
+  padding: 0 7rem;
+}
+
+.recipeheader {
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #d7127c;
+  border-top: 3px solid #d7127c;
+}
+
+.recipeInfo {
+  margin: 2rem 0;
+  display: flex-start;
+  justify-content: space-between;
+}
+
+.recipeInfo img {
+  width: 50%;
+  max-width: 500px;
+}
+
+.recipeInfo .recipeingridients {
+  width: 40%;
+}
+
+.recipeInfo .recipeingridients h2,
+.recipeinstruction h2 {
+  border-bottom: 2px dashed #d7127c;
+  margin: 0;
+}
+
+.recipeInfo .recipeingridients ul {
+  padding-left: 0 0 0 2rem;
+  text-align: start;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.recipeInfo .recipeingridients ul li::marker {
+  color: #d7127c;
+}
+
+.recipeinstruction p {
+  font-size: 1.5rem;
+}

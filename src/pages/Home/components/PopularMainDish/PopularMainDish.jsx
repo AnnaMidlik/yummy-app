@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Link } from 'react-router-dom';
 import '@splidejs/react-splide/css';
 import RecipeBox from '../../../../components/RecipeBox'
 
 export function PopularMainDish() {
   const [popularMainDishRecipe, setPopularMainDishRecipe] = useState([]);
   useEffect(() => {
-    console.log(popularMainDishRecipe)
     getMainDish()
   }, [])
   const getMainDish = async () => {
@@ -45,7 +45,10 @@ export function PopularMainDish() {
         {popularMainDishRecipe.map(slide => {
           return <SplideSlide
             key={slide.id}>
-            <RecipeBox recipe={slide} />
+            <Link to={`recipe/${slide.id}`}>
+              <RecipeBox recipe={slide} />
+            </Link>
+
           </SplideSlide>
         })}
       </Splide>

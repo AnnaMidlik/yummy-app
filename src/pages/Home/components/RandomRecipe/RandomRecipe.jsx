@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Link } from 'react-router-dom';
 import '@splidejs/react-splide/css';
 import RecipeBox from '../../../../components/RecipeBox'
 import './RandomRecipeStyle.css'
@@ -44,7 +45,9 @@ export function RandomRecipe() {
         {randomRecipe.map(slide => {
           return <SplideSlide
             key={slide.id}>
-            <RecipeBox recipe={slide} />
+            <Link to={`recipe/${slide.id}`}>
+              <RecipeBox recipe={slide} />
+            </Link>
           </SplideSlide>
         })}
       </Splide>
