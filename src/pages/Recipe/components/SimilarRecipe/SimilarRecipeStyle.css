@@ -1,0 +1,27 @@
+.recipeBoxesContainer {
+  margin-bottom: 2rem;
+}
+
+.recipeHeader {
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #d7127c;
+  border-top: 3px solid #d7127c;
+}
+
+.recipesBoxes {
+  margin-top: 2rem;
+}
+
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  background: rgba(215, 18, 124, 0.8);
+  border: none;
+  padding: 0;
+}
+
+.arrow svg {
+  fill: #fff;
+}

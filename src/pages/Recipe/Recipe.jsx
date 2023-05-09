@@ -5,6 +5,7 @@ import './RecipeStyle.css';
 export function Recipe() {
   const params = useParams();
   const [recipe, setRecipe] = useState({ extendedIngredients: [] });
+  const { title, image, extendedIngredients, instructions } = recipe;
   useEffect(() => {
     getRecipe(params.id)
   }, []);
@@ -18,20 +19,21 @@ export function Recipe() {
   };
   return (
     <div className='recipeContainer'>
-      <div className="recipeheader">{recipe.title}</div>
-      <div className='recipeInfo'> <img src={recipe.image} alt="recipe-img" />
+      <div className="recipeheader">{title}</div>
+      <div className='recipeInfo'> <img src={image} alt="recipe-img" />
         {/* <p>ready in {recipe.readyInMinutes}</p> */}
         <div className='recipeingridients'>
           <h2>Ingridients : </h2>
           <ul >
-            {recipe.extendedIngredients.map(el => <li>{el.name}</li>)}
+            {extendedIngredients.map(el => <li>{el.name}</li>)}
           </ul>
         </div>
       </div>
-      <div className='recipeinstruction'>
-        <h2> INSTRUCTIONS:</h2>
-        <p>{recipe.instructions}</p>
-      </div>
+      {instructions
+        && <div className='recipeinstruction'>
+          <h2> INSTRUCTIONS:</h2>
+          <p>{instructions}</p>
+        </div>}
     </div>
   )
 }
