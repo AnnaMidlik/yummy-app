@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import SimilarRecipe from './components/SimilarRecipe'
 import './RecipeStyle.css';
 
 export function Recipe() {
@@ -8,8 +9,7 @@ export function Recipe() {
   const { title, image, extendedIngredients, instructions } = recipe;
   useEffect(() => {
     getRecipe(params.id)
-  }, []);
-
+  }, [params.id]);
   const getRecipe = async (id) => {
     const url = `https://api.spoonacular.com/recipes/${id}/information?apiKey=${process.env.REACT_APP_API_KEY}`
     const api = await fetch(url);
@@ -34,6 +34,7 @@ export function Recipe() {
           <h2> INSTRUCTIONS:</h2>
           <p>{instructions}</p>
         </div>}
+      <SimilarRecipe id={params.id} />
     </div>
   )
 }

@@ -1,27 +1,25 @@
-.recipeBoxesContainer {
+.similarRecipeContainer {
   margin-bottom: 2rem;
-}
-
-.recipeHeader {
-  font-size: 2.5rem;
-  padding: 1.5rem 0;
-  border-bottom: 3px solid #d7127c;
+  font-size: 1.2rem;
   border-top: 3px solid #d7127c;
+  text-align: start;
 }
 
-.recipesBoxes {
-  margin-top: 2rem;
+.similarRecipeContainer ul {
+  font-size: 1.5rem;
 }
 
-
-.arrow {
-  width: 50px;
-  height: 50px;
-  background: rgba(215, 18, 124, 0.8);
-  border: none;
-  padding: 0;
+.similarRecipeContainer ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
-.arrow svg {
-  fill: #fff;
+.similarRecipeContainer ul li a:hover {
+  color: #d7127c;
+  text-decoration: underline;
+}
+
+.similarRecipeContainer ul li::marker {
+  color: #d7127c;
 }
