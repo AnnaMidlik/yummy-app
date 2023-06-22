@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/yummy-app/static/css/main.a4f44f5c.css",
-    "main.js": "/yummy-app/static/js/main.6f2e2a6d.js",
+    "main.css": "/yummy-app/static/css/main.090d880e.css",
+    "main.js": "/yummy-app/static/js/main.31a78d37.js",
     "static/media/logo.png": "/yummy-app/static/media/logo.cf9786ec64f5e19e1b7f.png",
+    "static/media/AnnieUseYourTelescope.ttf": "/yummy-app/static/media/AnnieUseYourTelescope.03314b9de13cfb638a49.ttf",
+    "static/media/defaultfood.png": "/yummy-app/static/media/defaultfood.daaae05ce7297db84105.png",
     "index.html": "/yummy-app/index.html",
-    "main.a4f44f5c.css.map": "/yummy-app/static/css/main.a4f44f5c.css.map",
-    "main.6f2e2a6d.js.map": "/yummy-app/static/js/main.6f2e2a6d.js.map"
+    "main.090d880e.css.map": "/yummy-app/static/css/main.090d880e.css.map",
+    "main.31a78d37.js.map": "/yummy-app/static/js/main.31a78d37.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4f44f5c.css",
-    "static/js/main.6f2e2a6d.js"
+    "static/css/main.090d880e.css",
+    "static/js/main.31a78d37.js"
   ]
 }
